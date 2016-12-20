@@ -1,0 +1,44 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Calendari mensual
+% Plantilla LaTeX
+%
+% L'autor original de l'estil: Evan Sultanik
+% 
+% Notes importants:
+% Aquesta plantilla requereix l'arxiu calendari.sty al mateix directori que el .tex. 
+% L'arxiu calendari.sty proveeix l'estructura necessària per crear el calendari.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%--------------------------------------------------------------------------------------------------
+% PAQUETS I CONFIGURACIÓ DEL DOCUMENT
+%--------------------------------------------------------------------------------------------------
+
+\documentclass[landscape, a4paper]{article}
+
+\usepackage{calendari} %calendari.sty
+\usepackage[utf8]{inputenc}
+\usepackage[landscape, margin=0.5in]{geometry}
+
+\begin{document}
+\pagestyle{empty} %Elimina la numeració de la pàgina
+\noindent
+\StartingDayNumber=1 %Dia d'inici del calendari, per defecte 1 - Dilluns, 2 - Dimarts, etc
+
+%--------------------------------------------------------------------------------------------------
+% SELECCIÓ D'ANY I MES
+%--------------------------------------------------------------------------------------------------
+
+\begin{center}
+\textsc{\LARGE Mes}\\ %Mes
+\textsc{\large Any} %Any
+\end{center}
+
+%--------------------------------------------------------------------------------------------------
+
+\begin{calendar}{\hsize}
+
+%--------------------------------------------------------------------------------------------------
+% DIES EN BLANC ABANS DEL COMENÇAMENT DEL CALENDARI
+%--------------------------------------------------------------------------------------------------
+\end{document}
