@@ -16,10 +16,9 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[landscape, a4paper]{article}
-
 \usepackage{calendari} % Ús de l'estil calendar.sty
-
 \usepackage[landscape, margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
 
 \begin{document}
 
@@ -72,8 +71,7 @@
 
 \setcounter{calendardate}{1} % Inicia la conta a 1
 
-%\day{Universitat}{10:00 Examen \\[6pt] 12:00 Presentació} % 1 - Exemple
-\day{}{\vspace{2.5cm}} % 1
+\day{Universitat}{10:00 Examen \\[6pt] 12:00 Presentació} % 1 - Exemple
 \day{}{\vspace{2.5cm}} % 2
 \day{}{\vspace{2.5cm}} % 3
 \day{}{\vspace{2.5cm}} % 4
@@ -106,7 +104,7 @@
 \day{}{\vspace{2.5cm}} % 31
 
 % Descomenta el \BlankDay següent si falta la línia de sota el calendari
-%\BlankDay
+\BlankDay
 
 % Descomenta per tornar a començar després del 31
 %\setcounter{calendardate}{1}
